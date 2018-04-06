@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, hashHistory } from 'react-router';
@@ -9,7 +10,11 @@ import routes from './routes';
 
 render(
     <Provider store={store}>
-        <Router history={hashHistory} routes={routes} />
+        <div>
+            <Router history={hashHistory} routes={routes}>
+            </Router>
+            <DevTools />
+        </div>
     </Provider>,
     document.getElementById('root')
 );
