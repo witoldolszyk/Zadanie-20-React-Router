@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getCountry } from '../actions/actions-countries';
-import CountryDetails from '../presentational/country-details.component';
+import CountryDetails from '../containers/country-details.component.js';
 
 class CountryDetailsContainer extends Component {
     constructor(props) {
